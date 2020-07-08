@@ -1,7 +1,7 @@
 <?php
-    $link = 'mysql:host=localhost;dbname=yt_colores';
+    $link = 'mysql:host=127.0.0.1:3307;dbname=yt_colores';
     $usuario = 'root';
-    $pass = 'toor';
+    $pass = '';
 
     try {
         $pdo = new PDO($link,$usuario,$pass);
