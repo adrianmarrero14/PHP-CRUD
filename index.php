@@ -51,8 +51,8 @@ if ($_GET) {
 
     <div class="container mt-5">
         <div class="row">
+            <!-- DIV COLORES -->
             <div class="col-md-6">
-
                 <?php foreach ($resultado as $dato) : ?>
                     <div class="alert alert-<?php echo $dato['color'] ?> text-uppercase" role="alert">
                         <?php echo $dato['color'] ?>
@@ -68,10 +68,10 @@ if ($_GET) {
                         </a>
                     </div>
                 <?php endforeach ?>
-
             </div>
-            <div class="col-md-6">
 
+            <!-- DIV FORM -->
+            <div class="col-md-6">
                 <?php if (!$_GET) : ?>
                     <h2>Agregar Elementos</h2>
                     <form method="POST">
@@ -90,7 +90,6 @@ if ($_GET) {
                         <button class="btn btn-warning">Editar</button>
                     </form>
                 <?php endif ?>
-
             </div>
         </div>
     </div>
